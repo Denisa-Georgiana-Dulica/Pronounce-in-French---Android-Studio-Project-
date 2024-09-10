@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <Button
+        android:id="@+id/button_colors"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="163dp"
+        android:background="@drawable/shape1"
+        android:text="Colors"
+        android:textColor="#306780"
+        android:textSize="40dp"
+        android:fontFamily="@font/mango"
+        app:backgroundTint="@null"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="104dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="148dp"
+        android:layout_marginEnd="28dp"
+        android:src="@drawable/dimension"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/button_colors"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_fruits"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/shape2"
+        android:fontFamily="@font/mango"
+        android:text="Fruits"
+        android:textColor="#9C27B0"
+        android:textSize="42dp"
+        app:backgroundTint="@null"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/button_colors" />
+
+    <ImageView
+        android:id="@+id/imageView_fruits"
+        android:layout_width="104dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginEnd="28dp"
+        android:src="@drawable/fruits"
+        app:layout_constraintBottom_toBottomOf="@id/button_fruits"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.53"
+        app:layout_constraintStart_toEndOf="@id/button_fruits"
+        app:layout_constraintTop_toBottomOf="@id/imageView"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/button_animals"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/shape3"
+        android:fontFamily="@font/mango"
+        android:text="Animals"
+        android:textColor="#11524C"
+        android:textSize="38dp"
+        app:backgroundTint="@null"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/button_fruits" />
+
+    <ImageView
+        android:id="@+id/imageView_animals"
+        android:layout_width="104dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginEnd="28dp"
+        android:src="@drawable/animals"
+        app:layout_constraintBottom_toBottomOf="@id/button_animals"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.53"
+        app:layout_constraintStart_toEndOf="@id/button_animals"
+        app:layout_constraintTop_toBottomOf="@id/imageView"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/mango"
+        android:text="Learn French"
+
+        android:textSize="100dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--
+În Android Studio, directorul raw este folosit pentru a
+stoca fișiere brute (mp3,video,json,txt,binare) care nu trebuie procesate sau transformate de Android.
+Aceste fișiere sunt stocate în aplicație (APK-android packages) în forma lor originală,
+astfel încât să poată fi accesate direct de către aplicație.-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

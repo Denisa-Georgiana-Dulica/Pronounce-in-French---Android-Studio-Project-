@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ForthActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/mango"
+
+        android:text="Animals"
+        android:textSize="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_bear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="91dp"
+        android:layout_marginEnd="160dp"
+        android:background="@drawable/shape4"
+        android:text="bear"
+        android:textColor="#4B071E"
+        app:backgroundTint="@null"
+        android:textSize="50dp"
+        android:fontFamily="@font/mango"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/button_lion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="160dp"
+        android:text="lion"
+        android:textSize="50dp"
+        android:fontFamily="@font/mango"
+        android:textColor="#192981"
+        android:background="@drawable/shape1"
+        app:backgroundTint="@null"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_bear" />
+
+    <Button
+        android:id="@+id/button_zebra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="160dp"
+        android:text="zebra"
+        android:textColor="#35320D"
+        android:textSize="50dp"
+        android:fontFamily="@font/mango"
+        android:background="@drawable/shape5"
+        app:backgroundTint="@null"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_lion" />
+
+    <Button
+        android:id="@+id/button_horse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="160dp"
+        android:text="horse"
+        android:textSize="50dp"
+        android:fontFamily="@font/mango"
+        android:background="@drawable/shape2"
+        android:textColor="#9C27B0"
+        app:backgroundTint="@null"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_zebra" />
+
+    <Button
+        android:id="@+id/button_elephant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="160dp"
+        android:text="elephant"
+        android:textSize="50dp"
+        android:fontFamily="@font/mango"
+        android:background="@drawable/shape3"
+        android:textColor="#0B5F57"
+        app:backgroundTint="@null"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_horse" />
+</androidx.constraintlayout.widget.ConstraintLayout>
